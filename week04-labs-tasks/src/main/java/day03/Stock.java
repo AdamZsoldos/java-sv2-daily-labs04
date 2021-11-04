@@ -14,7 +14,7 @@ public class Stock {
         double result = 0;
         double min;
         double max;
-        for (int i = 0; i < stocks.size(); i++) {
+        for (int i = 0; i < stocks.size() - 1; i++) {
             min = max = stocks.get(i);
             for (int j = i + 1; j < stocks.size(); j++) {
                 if (stocks.get(j) > max) max = stocks.get(j);
